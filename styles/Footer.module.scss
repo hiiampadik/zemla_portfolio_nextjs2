@@ -1,0 +1,37 @@
+@import '_variables.scss';
+
+.footer {
+  max-width: calc(100vw - $lh * 3);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  
+  grid-gap: $lh/1.5;
+  justify-items: left;
+  text-align: left;
+  align-items: start;
+
+  padding: $lh * 0.5;
+
+  p {
+    margin: 0
+  }
+  
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: left;
+    text-align: left;
+    padding: $lh*0.5 $lh*3;
+  }
+  
+  @media only screen and (max-width: $breakpoint-smalltablet-max) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    justify-items: left;
+    padding: $lh * 0.5;
+    margin-bottom: $lh;
+  }
+
+  line-height: 1.1em;
+}

@@ -1,0 +1,115 @@
+@import "_variables.scss";
+
+// Neue Bit
+
+@font-face {
+  font-family: "Mondwest";
+  src: url("/fonts/otf_bit/PPMondwest-Bold.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  line-height: 1.38;
+  /* font-smoothing: antialiased; */
+
+  @media only screen and (max-width: $breakpoint-mobile-max) {
+    font-size: 16px;
+  }
+}
+
+
+
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+button {
+  color: var(--main-text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.2em;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  /* margin: 0 */
+}
+
+figure {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Themes */
+:root {
+  --menufont: neue-haas-unica, sans-serif;
+  --menusize: 1rem;
+
+
+  --borderradius: calc(0.3rem); 
+
+  --bg: rgba(255, 255, 255, 0.8);
+  --blur: blur(0.7rem);
+  --rendering: auto;
+}
+
+[data-theme="lowTech"] {
+  --menufont: Mondwest, Times, serif;
+  --menusize: 1.1rem;
+
+  --borderradius: 0;
+
+  --bg:white;
+  --blur: blur(0);
+  --rendering: pixelated;
+}
+
+[data-theme="highTech"] {
+  --menufont: neue-haas-unica, sans-serif;
+  --menusize: 1rem;
+
+  --borderradius: calc(0.3rem); 
+
+  --bg: rgba(255, 255, 255, 0.8);
+  --blur: blur(0.7rem);
+
+  --rendering: auto;
+}
+
+
+
+
+body{
+  font-family: var(--menufont);
+  font-weight: 400;
+  background-color: #ffffff;
+  color: black;
+}
+
+img {
+  image-rendering: var(--rendering);
+}

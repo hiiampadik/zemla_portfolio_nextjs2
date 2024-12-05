@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+.svatbaWrap {
+  display: flex;
+  justify-content: center;
+}
+.svatbaContainer {
+  padding: $lh * 3 $lh / 2;
+  max-width: 700px;
+  p,
+  h1,
+  h2 {
+    margin: $lh 0;
+    color: rgb(19, 19, 45) !important;
+  }
+  p {
+  }
+  h1 {
+    text-decoration: none !important;
+    font-size: 3.5rem !important;
+    line-height: 1em;
+  }
+  h2 {
+    text-decoration: none !important;
+    font-size: 1.6rem !important;
+  }
+  a {
+    text-decoration: underline;
+  }
+}

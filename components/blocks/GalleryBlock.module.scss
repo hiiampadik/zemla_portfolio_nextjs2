@@ -1,0 +1,69 @@
+@import "../../styles/_variables.scss";
+
+.swiper {
+  width: 100%;
+  padding: 0;
+  padding-bottom: $lh * 1.7 !important;
+  
+  margin-bottom: $lh * 1.7;
+
+  height: calc(100vh - $lh * 7);
+  
+  @media only screen and (max-width: $breakpoint-mobile-max) {
+    max-height: calc(100vh - $lh * 9);
+  }
+
+  :global {
+    @media (hover: none){
+      .swiper-button-next, .swiper-button-prev {
+        display: none;
+      }
+    }
+    .swiper-button-next {
+      cursor: e-resize;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      top: 0;
+      margin: 0;
+      &::after{
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      cursor: w-resize;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      top: 0;
+      margin: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
+
+.swiper-wrapper{
+  align-items: center;
+}
+
+.swiperBlock {}
+
+.swiperSlide {
+  padding: 0 $lh * 1.5;
+  
+  @media only screen and (max-width: $breakpoint-mobile-max) {
+    padding: $lh;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}

@@ -1,0 +1,142 @@
+@import "_variables.scss";
+
+.boundParent{
+  position: fixed;
+  top: calc($lh * 2.4);
+  height: calc(100vh - $lh * 2.4);
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+
+.draggableContainer {
+  pointer-events: all;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+
+  width: $lh * 25;
+  max-width: 75vw;
+  height: $lh * 20;
+  max-height: 80vh;
+  border: 1.5px black solid;
+
+  background-color: var(--bg);
+  backdrop-filter: var(--blur);
+
+  font-family: var(--menufont);
+  font-weight: 400;
+  font-size: var(--menusize);
+  line-height: 1.3em;
+
+  border-radius: var(--borderradius);
+  @media only screen and (max-width: $breakpoint-smalltablet-max) {
+    left: $lh;
+    top: $lh * 3;
+    max-width: calc(100vw - $lh * 2);
+  }
+
+  @media only screen and (max-width: 400px) {
+    left: $lh / 2;
+    top: $lh * 3;
+    max-width: calc(100vw - $lh);
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.3em;
+  }
+}
+
+.qualityContainer{
+  width: $lh * 20;
+}
+
+.draggableHeader {
+  left: 0;
+  width: 100%;
+  height: $lh * 1.5;
+  cursor: grab;
+  border-bottom: 1.5px black solid;
+
+  padding: calc($lh / 3);
+  line-height: 1em;
+  border-top-left-radius: var(--borderradius);
+  border-top-right-radius: var(--borderradius);
+  font-size: var(--menusize);
+}
+
+.draggableContent {
+  padding: calc($lh / 1.5);
+  padding-bottom: 6px;
+  overflow-y: scroll;
+  height: calc(100% - $lh * 1.5);
+
+  img {
+    margin: $lh/2 0;
+    border-radius: var(--borderradius);
+    max-width: 100%;
+  }
+
+  p{
+    max-width: 550px;
+  }
+}
+
+.draggableClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc($lh * 1.5);
+  width: calc($lh * 1.5);
+
+  background-image: url(../public/ui/close.svg);
+  background-size: calc($lh / 1.3) calc($lh / 1.3);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.aboutLinks{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: $lh/2;
+  width: 100%;
+  margin: 0;
+  margin-bottom: $lh * 1.5;
+  @media only screen and (max-width: $breakpoint-mobile-max) {
+    gap: $lh/4;
+  }
+
+  @media only screen and (max-width:450px) {
+    grid-template-columns: auto;
+  }
+
+
+  a{
+    text-decoration: none !important;
+    padding: $lh / 4 $lh / 3;
+    border: 1.5px black solid;
+    text-align: center;
+    border-radius: $lh;
+    @media only screen and (max-width: $breakpoint-mobile-max) {
+      padding: $lh / 4 $lh / 4;
+      font-size: 1rem;
+    }
+  }
+  // a:active{
+  //   color: blue;
+  //   border: 1.5px blue solid;
+  // }
+
+
+@media (hover: hover){
+  a:hover{
+    color: blue;
+    border: 1.5px blue solid;
+  }
+}
+}

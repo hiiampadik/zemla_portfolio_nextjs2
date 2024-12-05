@@ -1,0 +1,89 @@
+@import "../../styles/_variables.scss";
+
+.container {
+  width: 100%;
+  margin: $lh/2 0 $lh 0;
+  user-select: none;
+}
+
+.container:last-of-type {
+  padding-bottom: $lh / 2;
+}
+
+.accordion {
+  width: 100%;
+
+  p,
+  h2 {
+    margin: 0;
+    border: none !important;
+  }
+}
+
+.accordionButton {
+  padding-left: $lh;
+
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+
+  margin: 0;
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.accordionButton::after {
+  content: "+";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordionButton[aria-expanded="true"]::after {
+  content: "–";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordionContent {
+  margin-top: $lh / 2;
+  margin-bottom: $lh;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: $lh * 0.2;
+  row-gap: $lh * 0.2;
+  img {
+    max-width: $lh * 4 !important;
+    height: $lh * 2.5;
+    object-fit: contain;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  p {
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $lh /2;
+    padding-bottom: $lh /4;
+    background-color: white;
+    border-radius: $lh * 0.5;
+    border: 1.5px black solid;
+    gap: $lh * 0.3;
+
+  }
+}

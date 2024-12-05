@@ -1,0 +1,171 @@
+@import "_variables.scss";
+
+.boundParent{
+  position: absolute;
+  top: calc($lh * 2.4);
+  height: calc(100vh - $lh * 2.4);
+  left: 0;
+  right: 0;
+}
+
+.filmButtonContainer {
+  position: fixed;
+  margin: 0 $lh;
+
+  background: white;
+  border: 1.5px black solid;
+  padding: calc($lh * 0.2) calc($lh * 0.4);
+  border-radius: var(--borderradius);
+
+  z-index: 500;
+  cursor: pointer;
+
+  text-align: center;
+  display: inline-block;
+
+  transition: 0.3s;
+  h1 {
+    font-family: var(--menufont);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1em;
+    @media only screen and (max-width: $breakpoint-mobile-max) {
+      font-size: 1.5rem;
+    }
+  }
+  filter: drop-shadow(0 0 0 black);
+}
+
+@media (hover: hover){
+  .filmButtonContainer:hover{
+    filter: drop-shadow($lh / 4 $lh / 4 0 black);
+    transform: translate(-$lh / 4, -$lh / 4);
+    }
+ }
+
+
+.filmsReload {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 600;
+  height: $lh * 3;
+  width: $lh * 3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filmsReloadHigh {
+  background-image: url(../public/ui/shuffle-high.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.filmsReloadLow {
+  background-image: url(../public/ui/shuffle-low.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+// .filmsReload:hover, .filmsReload:active{
+//   transform: translate(-50%, -50%) scale(1.05);
+// }
+
+@media (hover: hover){
+  .filmsReload:hover{
+    transform: translate(-50%, -50%) scale(1.05);
+    }
+ }
+
+.filmContainer {
+  display: block;
+  z-index: 700;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 70%;
+  max-width: 100vh;
+
+  border: 1.5px black solid;
+  background-color: var(--bg);
+  backdrop-filter: var(--blur);
+  border-radius: var(--borderradius);
+
+  font-family: var(--menufont);
+  font-weight: 400;
+  font-size: var(--menusize);
+  line-height: 1.15em;
+
+  @media only screen and (max-width: $breakpoint-smalltablet-max) {
+    left: $lh;
+    top: $lh *3;
+    width: calc(100vw - $lh * 2);
+  }
+
+  @media only screen and (max-width: 400px) {
+    left: $lh / 2;
+    top: $lh *3;
+    width: calc(100vw - $lh);
+  }  
+}
+
+.filmContainerHeader {
+  left: 0;
+  width: 100%;
+  height: $lh * 1.5;
+  cursor: grab;
+  border-bottom: 1.5px black solid;
+
+  padding: calc($lh / 3);
+
+  border-top-left-radius: var(--borderradius);
+  border-top-right-radius: var(--borderradius);
+}
+
+.filmContent {
+  padding: calc($lh / 3);
+  overflow: scroll;
+    max-height: 15vh;
+
+
+  p {
+    margin: 0;
+  }
+}
+
+.filmPlayerWrapper {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  border-bottom: 1.5px black solid;
+  background-color: #000;
+}
+
+.filmPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $lh * 16;
+}
+
+.filmClose {
+  position: absolute;
+  top: calc($lh / 3);
+  right: calc($lh / 3);
+  height: calc($lh / 1.3);
+  width: calc($lh / 1.3);
+
+  background-image: url(../public/ui/close.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+// .draggableClose:hover, .draggableClose:active {
+//   transform: rotate(90deg);
+// }
+
+@media (hover: hover){
+  .draggableClose:hover{
+    transform: rotate(90deg);
+  }
+}

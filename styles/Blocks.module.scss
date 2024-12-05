@@ -1,0 +1,85 @@
+@import "_variables.scss";
+
+.blocks {
+  width: 100%;
+
+  p,
+  h1,
+  h2 {
+    margin: 0;
+  }
+  h1 {
+    margin-top: $lh;
+    margin-bottom: $lh / 3;
+    // text-decoration: underline;
+    // text-decoration-thickness: 1.5px;
+    // text-underline-offset: 1px;
+
+    font-size: 1.6rem;
+    line-height: 1em;
+  }
+  h2 {
+    margin-top: $lh / 3;
+    margin-bottom: $lh / 3;
+    font-size: 1.05rem;
+    padding-left: $lh;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: $lh / 2;
+  }
+
+  figure{
+    margin: $lh 0 $lh 0;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+  }
+  figcaption{
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 1px;
+
+    font-size: 1rem;
+    padding-top: $lh / 4;
+  }
+  // a:active{
+  //   color: blue;
+  // }
+
+  @media (hover: hover){
+    a:hover{
+      color: blue;
+    }
+  }
+
+}
+
+.file{
+  margin: $lh /2 0;
+  display: block;
+  width: min-content;
+  text-decoration: none !important;
+  padding: $lh / 4 $lh;
+  border: 1.5px black solid;
+  text-align: center;
+  border-radius: $lh;
+}
+
+// .file:active{
+//   color: blue;
+//   border: 1.5px blue solid;
+// }
+
+@media (hover: hover){
+  .file:hover{
+    color: blue;
+    border: 1.5px blue solid;
+  }
+}

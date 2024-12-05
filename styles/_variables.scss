@@ -1,0 +1,133 @@
+$lh: 1.42rem;
+$medium: 1.2rem;
+
+$breakpoint-mobile-max: 600px;
+
+
+$breakpoint-mobile-max     : 320px;
+$breakpoint-mobile-max     : 575px;
+
+$breakpoint-smalltablet-min: 576px;
+$breakpoint-smalltablet-max: 767px;
+
+$breakpoint-largetablet-min: 768px;
+$breakpoint-largetablet-max: 1024px;
+
+$breakpoint-smallscreen-min: 1025px;
+$breakpoint-smallscreen-max: 1399px;
+
+$breakpoint-largescreen-min: 1400px;
+$breakpoint-largescreen-max: 2559px;
+
+$breakpoint-2k-min: 2560px;
+$breakpoint-2k-max: 3839px;
+
+$breakpoint-4k-min: 3840px;
+
+
+.overlay{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hideContent{
+  animation-name: hide;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.showContent{
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes hide{
+  0%   {
+    background-color: rgba(255,255,255, 0);
+    backdrop-filter: blur(0rem);
+  }
+  100%  {
+    background-color: rgba(255,255,255, 1);
+    backdrop-filter: blur(2rem);
+  }
+}
+
+@keyframes show{
+  0%   {
+    background-color: rgba(255,255,255, 1);
+    backdrop-filter: blur(2rem);
+  }
+  30%   {
+    background-color: rgba(255,255,255, 1);
+    backdrop-filter: blur(2rem);
+  }
+  100%  {
+    background-color: rgba(255,255,255, 0);
+    backdrop-filter: blur(0rem);
+  }
+}
+
+
+@media (hover: hover){
+  .navQuality:hover{
+    p {
+      color: #9539ce;
+    }
+    div{
+      background-color: #9539ce;
+    }
+  }
+}
+
+@media (hover: hover){
+  .purple:hover{
+    color: #9539ce;
+
+  }
+}
+
+@media (hover: hover){
+  .blue:hover{
+    color: #4763FF;
+  }
+}
+
+@media (hover: hover){
+  .yellow:hover{
+    color: #F7C644;
+  }
+}
+
+@media (hover: hover){
+  .orange:hover{
+    color: #FF7347;
+  }
+}
+
+@media (hover: hover){
+  .brown:hover{
+    color: #906514;
+  }
+}
+
+@media (hover: hover){
+  .pink:hover{
+    color: #f7afbc;
+  }
+}
+
+@media (hover: hover){
+  .green:hover{
+    color: #65ac9b;
+  }
+}

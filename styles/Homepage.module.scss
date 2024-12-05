@@ -1,0 +1,71 @@
+@import "_variables.scss";
+
+.homeSwiper{
+  user-select: none;
+  position: fixed;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 60vh;
+
+  max-width: 100vh;
+
+  @media only screen and (max-width: $breakpoint-smalltablet-max) {
+    width: 80vw;
+    height: 70vh;
+  }
+  @media only screen and (max-width: $breakpoint-mobile-max) {
+    max-width: 95vw;
+  }
+  :global {
+    .swiper-button-prev{
+      display: none;
+    }
+    .swiper-button-next {
+      cursor: e-resize;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      margin: 0;
+      &::after{
+        display: none;
+      }
+    }
+
+    @media (hover: none){
+      .swiper-button-next {
+        display: none;
+      }
+    }
+  }
+}
+
+.swiperSlide{
+  img{
+    pointer-events: none;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.homeLinks{
+  position: fixed;
+  bottom: $lh;
+  left: $lh;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: flex-end;
+  a{
+    text-transform: none;
+  }
+
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    width: 75%;
+  }
+}

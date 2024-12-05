@@ -1,0 +1,54 @@
+@import "_variables.scss";
+
+
+.printInfoContainer {
+  max-width: 600px;
+  margin: 0 auto $lh * 3 auto;
+  padding: 0 $lh;
+}
+
+.printPhotoContainer{
+  padding: 0 $lh;
+  display: grid;
+  gap: $lh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  @media only screen and (max-width: $breakpoint-largescreen-max) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media only screen and (max-width: $breakpoint-smallscreen-max) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media only screen and (max-width: $breakpoint-largetablet-max) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (max-width: $breakpoint-smalltablet-max) {
+    grid-template-columns: 1fr;
+  }
+  p{
+    margin: 0;
+    margin-top: $lh /4;
+  }
+  h1{
+    margin-bottom: $lh /4;
+    font-family: var(--menufont);
+    font-weight: 400;
+
+    font-size: 1rem;
+    line-height: 1em;
+  }
+}
+
+.printPhotoWrap{
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+
+.printPhotoAvailable{
+  img{
+    filter: brightness(0.3);
+  }
+}
+
+

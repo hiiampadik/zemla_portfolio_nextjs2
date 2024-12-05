@@ -1,0 +1,60 @@
+@import "_variables.scss";
+
+.boundParent {
+  position: absolute;
+  top: calc($lh * 2.4);
+  height: calc(100vh - $lh * 2.4);
+  left: 0;
+  right: 0;
+}
+
+.projectInfoButton {
+  position: fixed;
+  bottom: $lh;
+  left: 50%;
+  transform: translate(-50%);
+
+  background: white;
+  border: 1.5px black solid;
+  padding: calc($lh * 0.2) calc($lh * 0.4);
+  z-index: 600;
+  cursor: pointer;
+
+  text-align: center;
+  transition: 0.3s;
+
+  border-radius: var(--borderradius);
+
+  p {
+    font-family: var(--menufont);
+    font-weight: 400;
+
+    font-size: 2rem;
+    line-height: 1em;
+    margin: 0;
+  }
+  filter: drop-shadow(0 0 0 black);
+
+  @media only screen and (max-width: 400px) {
+    bottom: $lh / 2;
+  }
+}
+
+// .projectInfoButton:hover,
+// .projectInfoButton:active {
+//   filter: drop-shadow($lh / 4 $lh / 4 0 black);
+//   transform: translate(calc(-50% - $lh / 4), -$lh / 4);
+// }
+
+@media (hover: hover){
+  .projectInfoButton:hover{
+    filter: drop-shadow($lh / 4 $lh / 4 0 black);
+    transform: translate(calc(-50% - $lh / 4), -$lh / 4);
+  }
+}
+
+.projectInfoContainer {
+  max-width: 600px;
+  margin: 0 auto $lh * 5 auto;
+  padding: 0 $lh;
+}

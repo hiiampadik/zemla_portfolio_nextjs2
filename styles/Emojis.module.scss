@@ -1,0 +1,28 @@
+@import '_variables.scss';
+
+.emojisContainer{
+  div{
+    position: fixed;
+
+    z-index: 100;
+    
+    font-family: var(--menufont);
+    font-weight: 400;
+    // font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1em;
+
+    transition: 0.3s;
+    width: max-content;
+    user-select: none;
+    pointer-events: none;
+  }
+}
+
+.qualityEmojis{
+  div{
+    font-family: Mondwest !important;
+    font-size: 1.1rem !important;
+  }
+}

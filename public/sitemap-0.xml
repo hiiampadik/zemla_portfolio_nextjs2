@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://pz-next.vercel.app</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/commercial</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/films</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/cs/films</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/en/films</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/cs/commercial</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/en/commercial</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/cs</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/en</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/cs/projects</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/en/projects</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/this-roadtrip-doesn-t-exist</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/parkour</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/zrcad_low</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/14-28-15-11</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/wc-dur</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/vesnickej-asfalt</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/tam-patrim</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://pz-next.vercel.app/projects/vetrelci</loc><lastmod>2022-10-13T14:40:51.593Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
